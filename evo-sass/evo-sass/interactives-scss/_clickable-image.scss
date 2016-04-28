@@ -1,0 +1,93 @@
+.newcolorbox {
+    margin: 20px auto;
+    padding: 2%;
+    clear: both;
+    background-color: $verical-image-background-color;
+    overflow: auto;
+    width: auto;
+    border: 4px solid $verical-image-border;
+}
+
+div.newcolorbox ul.clickable-list {
+    @include reset-margin-padding;
+    & > li {
+        list-style: none outside none;
+    }
+    &.horizontal-layout > li {
+        display: inline-block;
+        margin: 0 0.25em;
+        padding: 0;
+    }
+    &:not(.horizontal-layout) > li {
+        clear: both;
+        & > *:first-child {
+            float: left;
+            margin-right: 3em;
+        }
+        & > *:nth-child(2) {
+            padding: 0.5em 0;
+            width: auto;
+        }
+    }
+    & > li > *,
+    & > li > * > a,
+    & > li > * > a > img {
+        @include reset-margin-padding;
+    }
+    & > li > * > a {
+        display: block;
+        @include border-radius(1em, 1em, 1em, 1em);
+    }
+    & > li > * > a > img,
+    & > li > * > a > .image-alt {
+        @include border-radius(1em, 1em, 1em, 1em);
+        display: block;
+    }
+    & > li > * > a {
+        border: 2px solid transparent;
+        color: $font-color;
+        text-decoration: none;
+    }
+    & > li * > a:focus,
+    & > li * > a:active,
+    & > li * > a:hover {
+        border: 2px solid $newcolorbox-border;
+        background: $newcolorbox-background;
+        outline: none;
+    }
+    & > li > * > a > .image-alt {
+        background-color: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden;
+        & span {
+            /*font-size:20px*/
+            font-size: 130%;
+            font-weight: bold;
+            padding: 0.15em;
+            position: relative;
+        }
+    }
+}
+
+@media print {
+    .absolute-position {
+        position: absolute;
+    }
+    div.newcolorbox ul.clickable-list.horizontal-layout > li {
+        display: block;
+        @include reset-margin-padding;
+        clear: both;
+        & > *:first-child {
+            float: left;
+            margin-right: 3em;
+        }
+        & > *:nth-child(2) {
+            padding: 0.5em 0;
+            width: auto;
+        }
+    }
+    div.newcolorbox ul.clickable-list > li > * > a > .image-alt.image-alt {
+        display: none;
+    }
+}

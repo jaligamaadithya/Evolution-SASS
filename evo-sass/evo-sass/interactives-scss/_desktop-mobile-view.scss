@@ -1,0 +1,21 @@
+/*Desktop/Mobile View*/
+
+.mobile-only,
+span.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
+span.desktop-only {
+    display: inline;
+}
+
+img.inline-image {
+    height: 1.5em;
+    padding: 0 0.05em;
+    vertical-align: middle;
+    width: auto;
+}

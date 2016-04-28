@@ -1,0 +1,29 @@
+div.expandable {
+    & a.button3d.expandcollapse,
+    & a.sm_iconbutton3d.expandcollapse {
+        display: inline;
+        display: inline-block;
+        overflow: hidden;
+        line-height: 150%;
+        vertical-align: middle;
+        color: $font-color;
+        background-color: #444;
+        border: 1px solid $black-222;
+        background-clip: border-box;
+        @include border-radius(16px, 16px, 16px, 16px);
+    }
+    & a.sm_iconbutton3d.expandcollapse {
+        padding: 2px 0 3px 2px;
+    }
+    & a.button3d.expandcollapse {
+        padding: 2px 10px 0;
+        &,
+        &:visited,
+        &:active,
+        &:hover,
+        &:focus {
+            color: $font-color;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.speechbubble {
+    margin-top: 10px;
+    margin-bottom: -15px;
+    width: auto;
+    border-bottom-width: 0;
+    border-top-width: 0;
+    border: 4px solid $speech-bubble-border;
+    background-color: $speech-bubble-background-color;
+    line-height: 150%;
+    padding: 20px;
+    /* round the corners */
+    @include border-radius(50px, 50px, 50px, 50px);
+}
+
+
+/* POINTLESS ???*/
+
+
+/*
+.speechbubble-bottom {
+	display: none;
+}*/
+
+.speechbubble-caption {
+    font-size: 80%;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 32px;
+    margin-right: 15px;
+    position: relative;
+    text-align: right;
+    top: 29px;
+    &:before {
+        border-left: 25px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 15px solid $speech-bubble-border;
+        content: "";
+        height: 0;
+        margin: 0 15px;
+        width: 0;
+    }
+}

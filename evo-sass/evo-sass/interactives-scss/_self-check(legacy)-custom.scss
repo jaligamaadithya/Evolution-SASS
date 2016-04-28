@@ -1,0 +1,28 @@
+div.selfcheck {
+    .simpleradio {
+        .clickme {
+            color: blue;
+            text-decoration: underline;
+            &:active,
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .showme {
+            display: none;
+            &.radio,
+            &.nojs {
+                display: block;
+            }
+        }
+    }
+    .showme {
+        display: none;
+    }
+    .simpleclick .showme {
+        &.click,
+        &.nojs {
+            display: block;
+        }
+    }
+}

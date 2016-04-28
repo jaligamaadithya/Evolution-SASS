@@ -1,0 +1,14 @@
+.dynamic-image-group {
+    background: none repeat scroll 0 0 #fafafa;
+    border: 1px solid $image-group-border;
+    clear: both;
+    margin: 6px auto;
+    overflow: auto;
+    padding: 2%;
+    width: auto;
+    line-height: 150%;
+    & figure,
+    figure.WrapCaptionLong {
+        width: auto!important;
+    }
+}

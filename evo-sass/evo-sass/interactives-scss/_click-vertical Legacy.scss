@@ -1,0 +1,23 @@
+#item1,
+#item2,
+#item3 {
+    background: url("/public/images_library/largeBanner/images/all/sampleimage_md.jpg") center center no-repeat;
+}
+
+#vert.click-vertical {
+  .clickme {
+    &:hover .caption, .caption.toggle {
+      display: none;
+    }
+  }
+  .details {
+    display: none;
+    &.nojs {
+      display: none;
+    }
+    &.toggle {
+      display: block;
+      padding-left: 30px;
+    }
+  }
+}

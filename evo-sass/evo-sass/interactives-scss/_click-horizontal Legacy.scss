@@ -1,0 +1,23 @@
+#item1a,
+#item2b,
+#item3c {
+    background: url("/public/images_library/largeBanner/images/all/sampleimage_md.jpg") center center no-repeat;
+}
+
+#horz.click-horizontal .clickme .caption {
+    display: none;
+    &.radio.toggle.hover {
+        display: none;
+    }
+    &.hover,
+    &.radio.toggle {
+        display: block;
+    }
+}
+
+.horz.details-click-horizontal .details {
+    display: none;
+    &.toggle {
+        display: block;
+    }
+}

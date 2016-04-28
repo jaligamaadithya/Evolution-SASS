@@ -1,0 +1,101 @@
+div {
+    &#instructorinfo {
+        .tab-section {
+            margin: 15px 0 10px;
+            padding: 0;
+        }
+        h3#name {
+            background: $gray-eee;
+            width: 300px;
+            padding: 10px;
+            border-bottom: none;
+            margin: 0;
+            /* round the corners */
+            @include border-radius(10px, 10px, 0px, 0px);
+            /* add shadows */
+            @include box-shadow(5px, 10px, 5px, $gray-666);
+            a:last-child,
+            span {
+                background: $gray-ddd;
+                padding: 6px;
+                display: block;
+                /* shadows */
+                 @include box-shadow3(1px, 1px, 1px,1px, $gray-666);
+                /*rounded corners*/
+                @include border-radius(3px, 3px, 3px, 3px);
+            }
+        }
+        #infobody {
+            background: $gray-eee;
+            margin-top: 0;
+            padding: 20px 10px 10px;
+            /* round the corners */
+            /* round the corners */
+            @include border-radius(0px, 10px, 10px, 10px);
+            /* add shadows */
+            @include box-shadow(5px, 10px, 5px, $gray-666);
+            h4 {
+                border-bottom: none;
+            }
+        }
+    }
+    &#instructorinfo-ul.tabs-collection li {
+        a {
+            background: $gray-e8e8;
+            padding: 4px 10px;
+            margin: 4px auto;
+            border: 1px solid $gray-ccc;
+            @include border-radius(4px, 4px, 4px, 4px);
+        }
+        &.selected a {
+            color: $black-222;
+            background: #F8F8F8;
+            border: 1px solid $gray-ddd;
+        }
+    }
+    &#instructorinfo {
+        padding: 20px;
+        h3.noborder {
+            margin: 0px 0 15px;
+            padding: 0;
+        }
+        .tab-section #contact-info {
+            background-color: $white-color;
+            border: 5px solid $gray-ccc;
+            padding: 20px;
+        }
+    }
+    &#instructor-info-tabs table.tablestyle2 {
+        background: none repeat scroll 0 0 $white-color;
+    }
+    &#instructor-info-tabs-ul.tabs-collection li {
+        background: none repeat scroll 0 0 $gray-bbb;
+        @include border-radius(10px, 10px, 0px, 0px);
+        cursor: pointer;
+        display: inline;
+        line-height: 150%;
+        margin: 0 5px;
+        padding: 15px 10px 10px;
+    }
+    &#instructor-info-tabs.tabbed-interface.js-enabled {
+        background: none repeat scroll 0 0 $gray-e8e8;
+        margin-top: 4px;
+    }
+    &#instructor-info-tabs-ul.tabs-collection li {
+        &.selected {
+            background: none repeat scroll 0 0 $gray-e8e8;
+        }
+        a {
+            background: none;
+            @include border-radius(3px, 3px, 3px, 3px);
+            @include box-shadow3(0px, 0px, 0px,0px, $gray-999);
+            display: inline-block;
+            padding: 6px;
+            font-size: 160%;
+            color: $black-222;
+        }
+        &.selected a {
+            background: none;
+        }
+    }
+}

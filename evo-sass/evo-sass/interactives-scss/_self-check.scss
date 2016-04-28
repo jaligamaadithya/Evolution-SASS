@@ -1,0 +1,263 @@
+form {
+    &.selfcheck .message .switchmode,
+    &.selfcheck2 .message .switchmode {
+        float: right;
+        margin-top: 0;
+    }
+    &.selfcheck .switchmode a,
+    &.selfcheck2 .switchmode a {
+        color: blue;
+        text-decoration: none;
+    }
+    &.selfcheck .switchmode a:hover,
+    &.selfcheck2 .switchmode a:hover,
+    &.selfcheck .switchmode a:focus,
+    &.selfcheck2 .switchmode a:focus {
+        text-decoration: underline;
+    }
+    &.selfcheck .switchmode a.selected {
+        color: $black-222;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            color: $black-222;
+            text-decoration: none;
+        }
+    }
+    &.selfcheck2 .switchmode a.selected {
+        color: $black-222;
+        text-decoration: none;
+        &:focus,
+        &:hover {
+            color: $black-222;
+            text-decoration: none;
+        }
+    }
+    &.selfcheck,
+    &.selfcheck2 {
+        background: none repeat scroll 0 0 #EDEDEE;
+        padding: 1px 20px 10px;
+        overflow: auto;
+        margin: 15px 0 15px;
+    }
+    &.selfcheck .form-buttons,
+    &.selfcheck2 .form-buttons {
+        clear: both;
+        padding: 10px 0;
+    }
+    &.selfcheck .form-buttons .self-check-submit,
+    &.selfcheck2 .form-buttons .self-check-submit {
+        float: right;
+    }
+    &.selfcheck,
+    &.selfcheck2 {
+        @include box-shadow(0px, 0px, 2px, $gray-888);
+    }
+    div.answers-list {
+        @include box-shadow(0px, 0px, 2px, $gray-888);
+        .draggable {
+            @include box-shadow(0px, 0px, 2px, $gray-888);
+        }
+    }
+    .questions-list input[type="text"] {
+        @include box-shadow(0px, 0px, 2px, $gray-888);
+    }
+    &.selfcheck2,
+    &.selfcheck {
+        @include box-shadow(0px, 0px, 2px, $gray-888);
+        @include border-radius(5px, 5px, 5px, 5px);
+    }
+    div.answers-list {
+        @include border-radius(5px, 5px, 5px, 5px);
+        .draggable {
+            @include border-radius(5px, 5px, 5px, 5px);
+        }
+    }
+    .questions-list {
+        input[type="text"],
+        .droppable {
+            @include border-radius(5px, 5px, 5px, 5px);
+        }
+    }
+    div.solutions-list {
+        @include border-radius(5px, 5px, 5px, 5px);
+    }
+    .questions-list {
+        border: none;
+        ol,
+        ul {
+            list-style: none outside none;
+            margin-left: -10px;
+            width: 70%;
+        }
+        li {
+            list-style: none outside none;
+            height: 100%;
+            line-height: 1.3em;
+            margin: 5px 0;
+            text-indent: -30px;
+            clear: left;
+        }
+        .droppable {
+            display: none;
+            padding: 10px;
+            margin: 0 0 5px 5px;
+            background: none repeat scroll 0 0 $gray-ddd;
+            border-width: 0px;
+        }
+    }
+    div.answers-list .droppable {
+        display: none;
+        padding: 10px;
+        margin: 0 0 5px 5px;
+        background: none repeat scroll 0 0 $gray-ddd;
+        border-width: 0px;
+    }
+}
+
+.dragdrop {
+    .questions-list .droppable,
+    div.answers-list .droppable {
+        display: inline;
+        display: inline-block;
+    }
+    .questions-list ol {
+        display: none;
+    }
+}
+
+form {
+    .questions-list {
+        label {
+            display: inline-block;
+            width: 78%;
+        }
+        .droppable,
+        label {
+            border-bottom: 0 none;
+            line-height: 2.2em;
+            margin-left: 3em;
+            text-indent: 0;
+            text-align: left;
+        }
+        input[type="text"] {
+            margin: 0 0.5em 0 -1.5em;
+            font-size: 1.3em;
+            padding: 0.2em;
+            width: 20px;
+            border: 1px solid $gray-aaa;
+            text-align: center;
+            float: left;
+        }
+    }
+    div.answers-list {
+        float: right;
+        background: none repeat scroll 0 0 $white-color;
+        border: 2px solid $gray-aaa;
+        @include border-radius(5px, 5px, 5px, 5px);
+        @include box-shadow(0px, 0px, 2px, $gray-888);
+        clear: both;
+        height: auto;
+        margin: 0 0;
+        padding: 0 20px;
+        position: relative;
+        top: 0;
+        width: 20%;
+    }
+    &.selfcheck2 {
+        div.questions-list {
+            width: 75%;
+            padding: 0;
+            display: inline-block;
+            ol {
+                width: auto;
+            }
+        }
+        &.dragdrop div.questions-list {
+            width: 23%;
+        }
+        div.answers-list {
+            width: 23%;
+            padding: 0;
+            float: right;
+            ul {
+                padding: 0 1em 0 2em;
+            }
+        }
+        &.dragdrop {
+            div.answers-list {
+                width: 75%;
+            }
+            .droppable {
+                overflow: auto;
+                z-index: 5;
+            }
+            .draggable {
+                z-index: 105;
+            }
+            .drop-placeholder {
+                display: inline-block;
+                float: left;
+            }
+        }
+    }
+    div.answers-list ul {
+        list-style: none outside none;
+        margin-left: -1em;
+        padding-left: 1em;
+        li {
+            list-style: none outside none;
+            height: 100%;
+            line-height: 1.3em;
+            margin: 5px 0 1em;
+        }
+    }
+}
+
+.dragdrop div.answers-list {
+    background: none repeat scroll 0 0 transparent;
+    border-width: 0px;
+    @include box-shadow(0px, 0px, 0px, $gray-888);
+}
+
+form div {
+    &.answers-list .draggable.ui-widget-content,
+    &.questions-list .draggable.ui-widget-content {
+        display: none;
+    }
+}
+
+.dragdrop div {
+    &.answers-list {
+        ul {
+            display: none;
+        }
+        .draggable.ui-widget-content {
+            display: block;
+            padding: 0.4em;
+            margin: 0 0 0.5em;
+            text-align: left;
+        }
+    }
+    &.questions-list .draggable.ui-widget-content {
+        display: block;
+        padding: 0.4em;
+        margin: 0 0 0.5em;
+        text-align: left;
+    }
+}
+
+
+/*.dragdrop .answers-list .draggable.ui-widget-content .letter-separator { display: none; }
+.answers-list .draggable .letter { display: none; }*/
+
+form div.solutions-list {
+    &.hidethis {
+        position: absolute;
+        left: -9999px;
+        background: none repeat scroll 0 0 $white-color;
+        padding: 1px 20px;
+    }
+    display: block;
+    position: static;
+}

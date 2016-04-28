@@ -1,0 +1,99 @@
+div {
+    &.box1half {
+        margin: 0 20px 20px 20px;
+        width: 44%;
+    }
+    &.box1third {
+        margin: 0 20px 20px 20px;
+        width: 28%;
+    }
+    &.box1quarter {
+        margin: 0 20px 20px 20px;
+        width: 20%;
+    }
+    &.box1half.right,
+    &.box1third.right,
+    &.box1quarter.right {
+        margin: 0 0 0 20px;
+    }
+    &.box1half.left,
+    &.box1third.left,
+    &.box1quarter.left {
+        margin: 0 40px 0 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    div {
+        &.box1half {
+            float: none;
+            width: auto;
+            margin: 0;
+            &.left,
+            &.right {
+                float: none;
+                width: auto;
+                margin: 0;
+            }
+        }
+        &.box1third {
+            width: 44%;
+        }
+        &.box1quarter {
+            width: 28%;
+        }
+        &.box1third,
+        &.box1quarter {
+            margin: 0 3% 0;
+        }
+        &.box1third.left,
+        &.box1quarter.left {
+            margin: 0 6% 0 0;
+        }
+        &.box1third.right,
+        &.box1quarter.right {
+            margin: 0 0 0 6%;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    div {
+        &.box1third {
+            float: none;
+            width: auto;
+            margin: 0;
+            &.left,
+            &.right {
+                float: none;
+                width: auto;
+                margin: 0;
+            }
+        }
+        &.box1quarter {
+            width: 41%;
+        }
+    }
+    .mobile-only {
+        display: block;
+    }
+    span.mobile-only {
+        display: inline;
+    }
+    body:not(.cke_editable) {
+        .desktop-only,
+        span.desktop-only {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    div.box1quarter,
+    div.box1quarter.left,
+    div.box1quarter.right {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+}

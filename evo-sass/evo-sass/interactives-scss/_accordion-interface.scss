@@ -1,0 +1,29 @@
+div.accordion-interface {
+    margin: 15px 0;
+    & .accordion-link {
+        margin-top: 0;
+        clear: both;
+        color: $accordion-link-color !important;
+        text-decoration: none !important;
+        display: block;
+        width: 98%;
+        font-size: 140%;
+        line-height: 200%;
+        padding: 5px;
+        background: $accordion-link-background;
+        @include border-radius(5px, 5px, 5px, 5px);
+        border: 1px solid $accordion-link-border;
+        box-shadow: 2px 2px 2px 0 $box-shadow;
+        -moz-box-shadow: 2px 2px 2px $box-shadow;
+        -webkit-box-shadow: 2px 2px 2px $box-shadow;
+        &.selected,
+        &:hover,
+        &:focus {
+            color: $accordion-link-focus !important;
+            text-decoration: none !important;
+            background: $black-222;
+            border: 1px solid $accordion-link-focus-border;
+            @include box-shadow(0px, 0px, 0px, $box-shadow);
+        }
+    }
+}

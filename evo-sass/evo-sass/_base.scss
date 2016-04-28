@@ -1,0 +1,157 @@
+/* variables*/
+
+$accordion-link-border: #CCCCCC;
+$accordion-link-background:#EEEEEE;
+$accordion-link-color:#000000;
+$accordion-link-focus:#FFFFFF;
+$accordion-link-focus-border:#000000;
+$background-color: #FFFFFF;
+$black-background-color:#000000;
+$border-color: #000000;
+$box-shadow:#666666;
+$conversation-color: #333333;
+$figcaption-color:#666666;
+$font-color: #FFFFFF;
+$image-info-color: #FFFFFF;
+$image-info-border:#FFFFFF;
+$image-info-background-color:#000000;
+$image-group-border:#EEEEEE;
+$image-thumbnail-border:#00F;
+$image-thumbnail-width:100px;
+$newcolorbox-background:#00F;
+$newcolorbox-border:#00F;
+$picture-border: #FFFFFF;
+$picture-box-shadow:#333333;
+$slideplayer-border:#666666;
+$slideplayer-font-color:#000000;
+$speech-bubble-background-color:#EEEEEE;
+$speech-bubble-border:#AAAAAA;
+$text-shadow-color:#000000;
+$tab-font-color: #00F;
+$vignette-fig-caption-color:#000000;
+$verical-image-background-color:#EEEEEE;
+$verical-image-border:#CCCCCC;
+$green-button-border:#798F46;
+$gray-eee:#EEEEEE;
+$green-8ca:#8CA651;
+$gray-888:#888888;
+$gray-444:#444444;
+$black-000:#000000;
+$green-adc:#ADCA60;
+$green-798:#798F46;
+$gray-e8e8:#e8e8e8;
+$black-333:#333333;
+$gray-bbb:#BBBBBB;
+$gray-aaa:#AAAAAA;
+$blue-00f:#00F;
+$blue-dbb:#000DBB;
+$gray-666:#666666;
+$blue-dark:#000874;
+$yellow-f66:#FFFF66;
+$white-color:#FFFFFF;
+$gray-999:#999999;
+$gray-ccc:#CCCCCC;
+$black-222:#222222;
+$gray-ddd:#DDDDDD;
+$instructorinfo-background-color:#FFFFFF;
+$redtext:#B00;
+$greentext:#060;
+$bluetext:#00B;
+$yellowtext:#660;
+$purpletext:#606;
+$aquatext:#066;
+$orangetext:#B60;
+$pinktext:#B06;
+$greenhighlight:#CFC;
+$bluehighlight:#DDF;
+$yellowhighlight:#FFC;
+$highlighter:#FFFFAA;
+$purplehighlight:#FDF;
+$orangehighlight:#FFE2BF;
+$pinkhighlight:#FDD;
+
+
+/*end of variables*/
+
+/* mixins */
+
+@mixin border-radius($radius1, $radius2, $radius3, $radius4) {
+    border-radius: $radius1 $radius2 $radius3 $radius4;
+    -webkit-border-radius: $radius1 $radius2 $radius3 $radius4;
+    -moz-border-radius: $radius1 $radius2 $radius3 $radius4;
+    -ms-border-radius: $radius1 $radius2 $radius3 $radius4;
+    -o-border-radius: $radius1 $radius2 $radius3 $radius4;
+}
+
+@mixin box-shadow($radius1, $radius2, $radius3, $color) {
+    box-shadow: $radius1 $radius2 $radius3 $color;
+    -webkit-box-shadow: $radius1 $radius2 $radius3 $color;
+    -moz-box-shadow: $radius1 $radius2 $radius3 $color;
+    -ms-box-shadow: $radius1 $radius2 $radius3 $color;
+    -o-box-shadow: $radius1 $radius2 $radius3 $color;
+}
+@mixin box-shadow2($radius1, $radius2, $radius3) {
+    box-shadow: $radius1 $radius2 $radius3;
+    -webkit-box-shadow: $radius1 $radius2 $radius3;
+    -moz-box-shadow: $radius1 $radius2 $radius3;
+    -ms-box-shadow: $radius1 $radius2 $radius3;
+    -o-box-shadow: $radius1 $radius2 $radius3;
+}
+@mixin box-shadow3($radius1, $radius2, $radius3,$radius4, $color) {
+    box-shadow: $radius1 $radius2 $radius3 $radius4 $color;
+    -webkit-box-shadow: $radius1 $radius2 $radius3 $radius4 $color;
+    -moz-box-shadow: $radius1 $radius2 $radius3 $radius4 $color;
+    -ms-box-shadow: $radius1 $radius2 $radius3 $radius4 $color;
+    -o-box-shadow: $radius1 $radius2 $radius3 $radius4 $color;
+}
+
+@mixin reset-margin-padding {
+    margin: 0px;
+    padding: 0px;
+}
+
+@mixin full-window {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin thumbnail-border-property {
+    border: 2px solid $image-thumbnail-border;
+    cursor: pointer;
+}
+@mixin rectangle($num) {
+    box-sizing: content-box;
+    display: inline-block;
+    min-width: $num*2;
+    height:($num);
+    padding: ($num/4) 10px;
+    margin: 5px;
+}
+@mixin round($num) {
+    box-sizing: content-box;
+    display: inline-block;
+    width: $num;
+    height: $num;
+    padding: ($num/5);
+    margin: 5px;
+}
+@mixin greenbtn-property {
+    color: $white-color;
+    display: inline-block;
+    padding: 0.5em;
+    text-decoration: none;
+    clear: both;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: $green-8ca;
+}
+@mixin list-syle-property {
+        line-height: 1.2;
+        list-style: none outside none;
+        margin: 0 0 1.1em;
+        padding-bottom: 1em;
+        padding-left: 30px;
+        padding-top: 0.1em;;
+}
+/*end of mixins*/

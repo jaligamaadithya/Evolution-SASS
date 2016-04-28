@@ -1,0 +1,53 @@
+div.tab-section-nav {
+    width: 100%;
+    margin-bottom: 0;
+    & a {
+        color: $tab-font-color;
+        display: inline-block;
+        text-decoration: none;
+        line-height: 150%;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &.navbutton {
+            & span {
+                padding: 5px 15px;
+                display: block;
+                cursor: pointer;
+                background: #f0f0f0;
+                border: 1px solid $border-color;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                /* round the corners */
+                @include border-radius(3px, 3px, 0px, 0px);
+            }
+            &:hover:not(.selected),
+            &:focus:not(.selected),
+            &:active:not(.selected) {
+                text-decoration: underline;
+            }
+            &.selected span {
+                background: $background-color;
+                cursor: auto;
+                color: $black-222;
+                text-decoration: none;
+                cursor: auto;
+                border-width: 1px 1px 0px;
+            }
+        }
+    }
+}
+
+div.tabbed-interface {
+    max-width: 100%;
+    min-height: 20px;
+    margin: -1px 0 16px;
+    border: 1px solid $border-color;
+    overflow: auto;
+    /* round the corners */
+    @include border-radius(0px, 3px, 3px, 3px);
+    & .tab-section {
+        padding: 20px;
+    }
+}

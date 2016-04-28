@@ -1,0 +1,60 @@
+.thumbnail350,
+.thumbnail350.nojs {
+    width: 3 * $image-thumbnail-width + 50px;
+}
+
+.thumbnail300,
+.thumbnail300.nojs {
+    width: 3 * $image-thumbnail-width;
+}
+
+.thumbnail250,
+.thumbnail250.nojs {
+    width: 2 * $image-thumbnail-width + 50px;
+}
+
+.thumbnail200,
+.thumbnail200.nojs {
+    width: 2* $image-thumbnail-width;
+}
+
+.thumbnail150,
+.thumbnail150.nojs {
+    width: $image-thumbnail-width + 50px;
+}
+
+.thumbnail100,
+.thumbnail100.nojs {
+    width: $image-thumbnail-width;
+}
+
+.thumbnail350.hover,
+.thumbnail300.hover,
+.thumbnail250.hover,
+.thumbnail200.hover,
+.thumbnail150.hover,
+.thumbnail100.hover {
+    @include thumbnail-border-property;
+}
+
+.thumbnail350.toggle,
+.thumbnail300.toggle,
+.thumbnail250.toggle,
+.thumbnail200.toggle,
+.thumbnail150.toggle,
+.thumbnail100.toggle {
+    @include full-window;
+}
+
+.figure.image-thumbnail,
+.image-thumbnail:hover,
+.image-thumbnail:focus {
+    @include thumbnail-border-property;
+}
+
+figure.image-thumbnail.thumb100,
+figure.image-thumbnail img.thumb100,
+.image-thumbnail.thumb100 {
+    width: 100% !important;
+    height: auto !important;
+}

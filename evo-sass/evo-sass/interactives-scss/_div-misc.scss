@@ -1,0 +1,134 @@
+div {
+    &.box100pxsmaller {
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 80%;
+    }
+    &.box200pxsmaller {
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 60%;
+    }
+    &.yellownote {
+        width: auto;
+        background-color: #FFF4D0;
+        border: 5px solid #FFE9A1;
+        padding: 10px;
+        margin: 20px auto;
+        clear: both;
+    }
+}
+
+
+
+.yellownote {
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0.5em;
+    }
+}
+
+.colorbox {
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0.5em;
+    }
+}
+
+.newcolorbox {
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0.5em;
+    }
+}
+
+.printicon {
+    float: right;
+    margin: -15px 5px;
+}
+
+div.arrow:before,
+td.arrow:before,
+th.arrow:before {
+    content: url(/public/images_library/largeBanner/images/all/arrow.png);
+    padding: 5px;
+}
+
+div.checkmark:before,
+td.checkmark:before,
+th.checkmark:before {
+    content: url(/public/images_library/largeBanner/images/all/check.png);
+    padding: 5px;
+}
+
+div.xmark:before,
+td.xmark:before,
+th.xmark:before {
+    content: url(/public/images_library/largeBanner/images/all/red-x.png);
+    padding: 5px;
+}
+
+div.thoughts:before,
+td.thoughts:before,
+th.thoughts:before {
+    content: url(/public/images_library/largeBanner/images/all/icon_thoughts.png);
+    padding: 5px;
+}
+ul.none,
+ol.none,
+ul.inline-list,
+ol.inline-list {
+    list-style: none outside none;
+    margin: 0 0 1em;
+    padding: 0;
+    text-indent: 0;
+}
+
+ul.none li,
+ol.none li {
+    margin: 0 0 1em;
+}
+
+ul.inline-list li,
+ol.inline-list li {
+    margin: 0 0 1em;
+    display: inline;
+}
+
+ul {
+    &.arrow > li {
+        @include list-syle-property;
+        background: url(/public/images_library/largeBanner/images/all/arrow.png) no-repeat 0 0.2em;
+    }
+    &.checkmark > li {
+       @include list-syle-property;
+        border-bottom: 1px dotted $gray-ccc;
+        background: url(/public/images_library/largeBanner/images/all/check.png) no-repeat 0 0.2em;
+    }
+    &.xmark > li {
+       @include list-syle-property;
+        border-bottom: 1px dotted $gray-ccc;
+        background: url(/public/images_library/largeBanner/images/all/red-x.png) no-repeat 0 0.2em;
+    }
+    &.thoughts {
+        color: #4A4C4D;
+        list-style-type: none;
+        margin-bottom: 0;
+        margin-right: 90px;
+        padding-bottom: 0;
+        padding-left: 20px;
+        > li {
+            list-style: none outside none;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            padding: 0.375em 0 1.5em 75px;
+            background: url(/public/images_library/largeBanner/images/all/icon_thoughts.png) no-repeat scroll 0 0 transparent;
+        }
+    }
+}

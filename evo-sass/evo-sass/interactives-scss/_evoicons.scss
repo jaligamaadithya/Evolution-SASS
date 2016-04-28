@@ -1,0 +1,79 @@
+div.coursework {
+    margin-left: 40px;
+    > *:first-child:before {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        float: left;
+        margin-left: -40px;
+    }
+    &.assessment > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/bubblesheet.jpg');
+    }
+    &.brainstorm > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/22355_brainstorm.png');
+    }
+    &.casestudy > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/notepaper.png');
+    }
+    &.discussion > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/speechbubble.png');
+    }
+    &.download > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/download.jpg');
+    }
+    &.email > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/mail.png');
+    }
+    &.game > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/game.png');
+    }
+    &.group > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/handshake.png');
+    }
+    &.handson > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/desk.png');
+    }
+    &.image > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/stillcamera.png');
+    }
+    &.mobile > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/mobile.png');
+    }
+    &.presentation > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/preso.png');
+    }
+    &.reading > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/reading.png');
+    }
+    &.reflection > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/manthink.png');
+    }
+    &.rss > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/rss.png');
+    }
+    &.selfcheck > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/checkbox.png');
+    }
+    &.survey > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/checklist.png');
+    }
+    &.transcript > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/papers.png');
+    }
+    &.video > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/moviedirect.png');
+    }
+    &.videoIcon > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/videoIcon.png');
+    }
+    &.webresource > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/globe.png');
+    }
+    &.written > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/pen.png');
+    }
+    &.yammer > *:first-child:before {
+        content: url('/public/images_library/largeBanner/images/all/yammer.png');
+    }
+}
+

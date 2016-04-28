@@ -1,0 +1,29 @@
+ol {
+    &.outlinelowerroman > li,
+    &.outlineloweralpha > li > ol > li,
+    &.outlinedecimal > li > ol > li > ol > li,
+    &.outlinealpha > li > ol > li > ol > li > ol > li,
+    &.outlineroman > li > ol > li > ol > li > ol > li > ol > li {
+        list-style: lower-roman;
+    }
+    &.outlineloweralpha > li,
+    &.outlinedecimal > li > ol > li,
+    &.outlinealpha > li > ol > li > ol > li,
+    &.outlineroman > li > ol > li > ol > li > ol > li {
+        list-style: lower-alpha;
+    }
+    &.outlinedecimal > li,
+    &.outlinealpha > li > ol > li,
+    &.outlineroman > li > ol > li > ol > li {
+        list-style: decimal;
+    }
+    &.outlinealpha > li {
+        list-style: upper-alpha;
+    }
+    &.outlineroman > li {
+        > ol > li {
+            list-style: upper-alpha;
+        }
+        list-style: upper-roman;
+    }
+}

@@ -1,0 +1,86 @@
+form.mini-quiz {
+    padding: 0 2em 1em;
+    border: 1px solid $black-000;
+    overflow: auto;
+    .mini-quiz-correct,
+    .mini-quiz-incorrect {
+        display: none;
+    }
+    > ul {
+        list-style: decimal;
+        > li:focus {
+            outline: none;
+        }
+    }
+    ul > li > {
+        ul,
+        ol {
+            list-style: none;
+            padding: 0;
+        }
+        ul {
+            margin: 0 0 2em;
+            > li {
+                margin: 0 0 0.25em;
+                padding: 0;
+                clear: both;
+                > {
+                    input {
+                        float: left;
+                        margin-right: 2em;
+                    }
+                    label {
+                        display: -webkit-flex;
+                        /* Safari */
+                        -webkit-flex-flow: row wrap;
+                        /* Safari 6.1+ */
+                        -webkit-align-content: space-around;
+                        /* Safari 7.0+ */
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-content: space-around;
+                    }
+                }
+            }
+        }
+    }
+    div.mini-quiz-feedback {
+        &:focus {
+            outline: none;
+        }
+        > table {
+            width: 100%;
+            border: 1px solid $gray-ddd;
+            margin-bottom: 2em;
+            > {
+                caption {
+                    font-size: 100%;
+                    color: $black-000;
+                    text-align: left;
+                }
+                thead > tr {
+                    background: $gray-eee;
+                }
+                tbody {
+                    tr > * {
+                        border-top: 1px solid $gray-ddd;
+                    }
+                    > tr:nth-child(even) {
+                        background: #f8f8f8;
+                    }
+                }
+            }
+            border-spacing: 0;
+            td,
+            th {
+                text-align: left;
+                vertical-align: top;
+                padding: 0.25em 0.5em;
+            }
+        }
+        td:not(.first-child),
+        th:not(.first-child) {
+            border-left: 1px dotted $gray-ddd;
+        }
+    }
+}
