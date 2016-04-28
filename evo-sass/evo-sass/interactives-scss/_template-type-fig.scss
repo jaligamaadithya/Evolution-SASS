@@ -1,0 +1,50 @@
+.template {
+    margin: 5px;
+    border: 4px solid;
+    background-color: $gray-444;
+    /*add shadow*/
+    @include box-shadow(2px, 2px, 5px, $black-333);
+    /*round the top left corner*/
+    @include border-radius(3px, 3px, 3px, 3px);
+}
+.border .caption a:active,
+.template .caption a:active,
+.template .caption a:hover,
+.border figcaption a:active,
+.template figcaption a:active,
+.border figcaption a:hover,
+.template figcaption a:hover,
+.border .caption a:focus,
+.template .caption a:focus,
+.border figcaption a:focus,
+.template figcaption a:focus {
+    text-decoration: none;
+}
+    figure > figcaption {
+        padding: 0 5px;
+    }
+    .picture {
+        .caption,
+        figcaption {
+            color: $black-000;
+        }
+    }
+    .border,
+    .template,
+    .border .caption,
+    .template .caption,
+    .border figcaption,
+    .template figcaption {
+        color: $white-color;
+    }
+    .border .caption a,
+    .template .caption a,
+    .border figcaption a,
+    .template figcaption a,
+    .border .caption a:visited,
+    .template .caption a:visited,
+    .border figcaption a:visited,
+    .template figcaption a:visited {
+        color: $white-color;
+        text-decoration: underline;
+    }

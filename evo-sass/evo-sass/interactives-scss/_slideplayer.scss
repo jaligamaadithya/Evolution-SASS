@@ -1,0 +1,64 @@
+div.slide-nav {
+    width: 100%;
+    height: 9px;
+    text-align: center;
+    line-height: 150%;
+    & a.navbutton {
+        font-weight: 900;
+        width: 14%;
+        float: none;
+        display: inline;
+        width: 35px;
+        margin: 0 2px;
+        font-size: 90%;
+        border: none;
+        @include border-radius(10px, 10px, 10px, 10px);
+        padding: 1px 7px;
+        background: none repeat scroll 0 0 $gray-888;
+        color: $font-color;
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &.selected {
+            text-shadow: 0 0 0 $text-shadow-color;
+            background: #BBBBBB;
+            color: $font-color;
+            background: none repeat scroll 0 0 $black-background-color;
+            color: $font-color;
+            text-decoration: none;
+        }
+    }
+    &.black a.navbutton {
+        background: none repeat scroll 0 0 $black-background-color;
+        border: 1px solid $border-color;
+        color: $font-color;
+        @include border-radius(5px, 5px, 5px, 5px);
+        &:hover,
+        &:focus {
+            text-shadow: 0 0 0 $text-shadow-color;
+            background: $black-222;
+        }
+    }
+}
+
+div.wcslideplayer {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 15px;
+    color: $slideplayer-font-color;
+    background: transparent;
+    border: 2px solid $slideplayer-border;
+    @include border-radius(10px, 10px, 10px, 10px);
+    line-height: 150%;
+    &.black {
+        background: none repeat scroll 0 0 $black-background-color;
+        border: 1px solid $border-color;
+        color: $font-color;
+    }
+    & .slide {
+        display: block;
+        padding: 20px;
+    }
+}

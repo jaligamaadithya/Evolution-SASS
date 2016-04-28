@@ -1,0 +1,42 @@
+a.fms-link:not(.caption):not(.inline-audio) {
+    background-color: $black-000;
+    color: $white-color;
+    display: inline-block;
+    padding: 5px;
+    margin: 3px;
+    text-decoration: none;
+}
+
+ol.fms-playlist {
+    color: $black-000;
+    li {
+        background-color: $black-222;
+        margin: 3px;
+        span {
+            color: $white-color;
+        }
+        a {
+            margin: 0 3px 0 0;
+        }
+    }
+}
+
+.fms-transcript-group {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid $gray-ddd;
+    margin: 5px auto 10px;
+    padding: 10px 20px;
+}
+
+.fms-link-desc {
+    font-style: italic;
+}
+
+a.fms-link .fms-link-desc {
+    font-size: 80%;
+}
+
+.fms-link-desc:before {
+    content: ' - ';
+    margin: 0 0.5em;
+}

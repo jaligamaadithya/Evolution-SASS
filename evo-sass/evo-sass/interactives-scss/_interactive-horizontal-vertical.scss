@@ -1,0 +1,134 @@
+
+ul {
+    &.interactive-vertical,
+    &.interactive-horizontal {
+        float: none;
+        display: block;
+        padding: 0;
+        margin-left: 0;
+        width: 720px;
+        max-width: 720px;
+    }
+    &.interactive-vertical {
+        width: 720px;
+        max-width: 720px;
+    }
+    &.interactive-horizontal {
+        height: 120px;
+        max-height: 120px;
+        min-height: 120px;
+    }
+    &.interactive-vertical li {
+        list-style: none;
+        width: 100%;
+        display: inline-block;
+    }
+    &.interactive-horizontal li {
+        list-style: none;
+        display: inline;
+    }
+}
+
+
+/* clickable images */
+
+ul {
+    &.interactive-vertical .clickme,
+    &.interactive-horizontal .clickme {
+        display: block;
+        float: left;
+        width: 100px;
+        max-width: 100px;
+        height: 100px;
+        min-height: 100px;
+        border: 1px solid $black-000;
+        @include box-shadow(2px, 2px, 10px, $gray-666);
+        margin: 5px;
+    }
+    &.interactive-vertical .clickme:hover,
+    &.interactive-horizontal .clickme:hover,
+    &.interactive-vertical .clickme:focus,
+    &.interactive-horizontal .clickme:focus {
+        @include box-shadow2(0px,0px,0px);
+        border: 1px solid $blue-00f;
+        cursor: pointer;
+    }
+}
+
+
+/* image hover text */
+
+ul {
+    &.interactive-vertical .clickme {
+        &:hover .caption,
+        &:focus .caption,
+        .caption.click {
+            display: none;
+        }
+    }
+    &.interactive-horizontal .clickme {
+        &:hover .caption,
+        &:focus .caption,
+        .caption.click {
+            display: none;
+        }
+    }
+    &.interactive-vertical .caption,
+    &.interactive-horizontal .caption {
+        display: block;
+        &.click.hover {
+            display: block;
+        }
+    }
+}
+
+ul {
+    &.interactive-vertical .caption,
+    &.interactive-horizontal .caption {
+        box-sizing: content-box;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(0, 0, 0, 0.8);
+        float: left;
+        margin: 0 auto;
+        width: 80px;
+        max-width: 80px;
+        padding: 30px 10px;
+        height: 40px;
+        max-height: 40px;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
+/* image details on click */
+
+div.details-horizontal {
+    margin: 10px 0 15px;
+}
+
+ul.interactive-vertical .details,
+.details-horizontal .details {
+    display: none;
+}
+
+ul.interactive-vertical .details {
+    &.nojs,
+    &.click,
+    &.hover {
+        display: inline-block;
+        float: left;
+        margin: 10px;
+        width: 458px;
+    }
+}
+
+div.details-horizontal .details {
+    &.nojs,
+    &.click,
+    &.hover {
+        display: block;
+    }
+}

@@ -1,0 +1,24 @@
+div.yellownote {
+    width: auto;
+    background-color: #FFF4D0;
+    border: 5px solid #FFE9A1;
+    padding: 10px;
+    margin: 20px auto;
+    clear: both;
+}
+
+.yellownote {
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0.5em;
+    }
+    h3.courseicon,
+    h4.courseicon,
+    h5.courseicon,
+    h6.courseicon {
+        margin-bottom: 5px;
+        margin-top: -15px;
+    }
+}

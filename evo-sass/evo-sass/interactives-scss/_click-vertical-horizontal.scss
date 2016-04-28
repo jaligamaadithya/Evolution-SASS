@@ -1,0 +1,120 @@
+ul {
+    &.click-vertical,
+    &.click-horizontal {
+        float: none;
+        display: block;
+        padding: 0;
+        margin-left: 0;
+        width: 720px;
+        max-width: 720px;
+    }
+    &.click-vertical {
+        width: 720px;
+        max-width: 720px;
+        li {
+            list-style: none;
+            width: 100%;
+            display: inline-block;
+        }
+    }
+    &.click-horizontal li {
+        list-style: none;
+        display: inline;
+    }
+}
+
+
+/* clickable images */
+
+ul {
+    &.click-vertical .clickme,
+    &.click-horizontal .clickme {
+        display: block;
+        float: left;
+        width: 100px;
+        max-width: 100px;
+        height: 100px;
+        min-height: 100px;
+        border: 1px solid $black-000;
+        @include box-shadow(2px, 2px, 10px, $gray-666);
+        margin: 5px;
+    }
+    &.click-vertical .clickme {
+        &:hover,
+        &:focus {
+            @include box-shadow2(0px,0px,0px);
+            border: 1px solid $blue-00f;
+            cursor: pointer;
+        }
+    }
+    &.click-horizontal .clickme {
+        &:hover,
+        &:focus {
+            @include box-shadow2(0px,0px,0px);
+            border: 1px solid $blue-00f;
+            cursor: pointer;
+        }
+    }
+}
+
+
+/* image hover text */
+
+ul {
+    &.click-vertical .caption,
+    &.click-horizontal .caption {
+        display: block;
+    }
+}
+
+ ul {
+    &.click-vertical .caption,
+    &.click-horizontal .caption {
+        color: rgba(255, 255, 255, 1);
+        box-sizing: content-box;
+        background: rgba(0, 0, 0, 0.8);
+        float: left;
+        margin: 0 auto;
+        width: 80px;
+        max-width: 80px;
+        padding: 30px 10px;
+        height: 40px;
+        max-height: 40px;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
+/* image details on click */
+
+div.details-click-horizontal {
+    margin: 10px 0 15px;
+    padding-top: 15px;
+    clear: both;
+}
+
+ul.click-vertical .details,
+div.details-click-horizontal .details {
+    display: none;
+}
+
+ul.click-vertical .details {
+    display: block;
+    float: left;
+    margin: 15px 10px;
+    width: 458px;
+    &.nojs {
+        display: block;
+        float: left;
+        margin: 15px 10px;
+        width: 458px;
+    }
+}
+
+div.details-click-horizontal .details.nojs {
+    display: block;
+}
+

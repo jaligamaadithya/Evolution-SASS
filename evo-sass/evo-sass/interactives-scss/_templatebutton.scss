@@ -1,0 +1,63 @@
+a.templatebutton {
+    text-align: center;
+    vertical-align: middle;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: 800;
+    border: 2px solid $gray-999;
+    background-color:$gray-eee;
+    &:active,
+    &:hover,
+    &:focus {
+        border: 2px solid $gray-ccc;
+    }
+}
+.rect20 {
+    @include rectangle(20px);
+    /* round the corners */
+    @include border-radius(10px, 10px, 10px, 10px);
+}
+
+.rect40 {
+    @include rectangle(40px);
+    /* round the corners */
+    @include border-radius(10px, 10px, 10px, 10px);
+}
+
+.rect60 {
+   @include rectangle(40px);
+    /* round the corners */
+    @include border-radius(10px, 10px, 10px, 10px);
+}
+
+.round25 {
+    @include round(25px);
+    /* round the corners */
+    @include border-radius(25px, 25px, 25px, 25px);
+}
+
+.round50 {
+     @include round(50px);
+    /* round the corners */
+    @include border-radius(50px, 50px, 50px, 50px);
+}
+
+.round75 {
+    @include round(75px);
+    /* round the corners */
+    @include border-radius(75px, 75px, 75px, 75px);
+}
+
+.round100 {
+   @include round(100px);
+    /* round the corners */
+    @include border-radius(100px, 100px, 100px, 100px);
+}
+
+.round150 {
+   @include round(150px);
+    /* round the corners */
+    @include border-radius(150px, 150px, 150px, 150px);
+}

@@ -1,0 +1,14 @@
+.colorbox {
+    margin: 20px auto;
+    padding: 2%;
+    clear: both;
+    background-color: $gray-eee;
+    overflow: auto;
+    width: auto;
+    border: 4px solid $gray-666;
+    /*add shadow*/
+    @include box-shadow(1px,1px,3px,$black-333);
+    /*round the corner*/
+    @include border-radius(15px,15px,15px,15px);
+    background-clip: padding-box;
+}

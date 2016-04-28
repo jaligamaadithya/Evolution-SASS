@@ -1,0 +1,346 @@
+body {
+    background: $white-color none repeat scroll 0 0;
+    color: $black-222;
+    font: small Arial, Helvetica, sans-serif;
+    &:not(.cke_editable) {
+        &:not(.cke_ltr) .offScreen {
+            height: 1px;
+            left: -10000px;
+            overflow: hidden;
+            position: absolute;
+            top: auto;
+            width: 1px;
+        }
+        #content_evo {
+            img {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+            figure {
+                max-width: 100% !important;
+                img {
+                    max-width: none !important;
+                }
+            }
+        }
+        figure.max-width {
+            width: 100% !important;
+            max-width: 100% !important;
+            img {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    }
+}
+@media screen {
+    #content_evo .hide-screen-but-print {
+        display: none !important;
+    }
+}
+
+.clickme {
+    cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearleft {
+    clear: left;
+}
+
+.clearright {
+    clear: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.printversion {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: none;
+    &.showme.toggle {
+        height: auto;
+        display: block;
+        overflow: auto;
+        padding: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        background: #F0F0F0;
+        border: 1px dotted #CCC;
+    }
+}
+
+.borderbottom {
+    border-bottom: 1px solid;
+}
+
+.borderbottomdotted {
+    border-bottom: 1px dotted;
+}
+
+.noborder {
+    border-bottom: medium none;
+    background: none;
+}
+
+.regularcenter {
+    font-weight: normal;
+    text-align: center;
+}
+
+.regularleft {
+    text-align: left;
+    font-weight: normal;
+}
+
+.regularright {
+    text-align: right;
+    font-weight: normal;
+}
+
+kbd {
+    font-size: 120;
+    font-weight: bold;
+}
+
+big {
+    font-size: 120;
+}
+
+small {
+    font-size: 80%;
+}
+
+.smallcenter {
+    font-size: 80%;
+    font-weight: normal;
+    margin-bottom: 0.75em;
+    margin-top: 0.75em;
+    text-align: center;
+}
+
+.smallright {
+    font-size: 80%;
+    font-weight: normal;
+    text-align: right;
+}
+
+.smallleft {
+    font-size: 80%;
+    font-weight: normal;
+    text-align: left;
+}
+
+.hangingindent {
+    text-indent: -25px;
+    padding-left: 25px;
+}
+
+.delete {
+    text-decoration: line-through;
+    color: #B00;
+}
+
+del {
+    text-decoration: line-through;
+    color: red;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+u.double-underline {
+    border-bottom: 1px double #000;
+}
+
+var {
+    font-style: italics;
+}
+
+ins {
+    text-decoration: underline;
+    color: #000;
+}
+
+.monospace,
+code,
+tt,
+samp {
+    font-family: "Courier New", Courier, monospace;
+}
+code {
+    background-color:inherit;
+    border-radius: none;
+    color: inherit;
+    font-size: none;
+    padding: none;
+}
+
+sub,
+sup {
+    font-size: 80%;
+}
+
+.eqstyle {
+    font-size: 1.17em;
+    font-family: MathJax_Main, STIXGeneral, 'DejaVu Serif', Cambria, 'Cambria Math', Times, serif;
+}
+
+math {
+    font-family: MathJax_Main, STIXGeneral, 'DejaVu Serif', Cambria, 'Cambria Math', Times, serif;
+    mi {
+        font-style: italic;
+    }
+}
+
+mfrac {
+    font-size: 1.25em;
+}
+
+td {
+    vertical-align: top;
+    p:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+th p:first-child,
+td ol:first-child,
+th ol:first-child,
+td ul:first-child,
+th ul:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+th.cell-top,
+td.cell-top {
+    vertical-align: top;
+}
+
+th.cell-middle,
+td.cell-middle {
+    vertical-align: middle;
+}
+
+th.cell-bottom,
+td.cell-bottom {
+    vertical-align: bottom;
+}
+
+th.cell-right,
+td.cell-right {
+    text-align: right;
+}
+
+th.cell-center,
+td.cell-center {
+    text-align: center;
+}
+
+th.cell-left,
+td.cell-left {
+    text-align: left;
+}
+
+th.cell-right {
+    text-align: right;
+}
+
+.left {
+    float: left;
+    margin: 5px 20px 5px 5px;
+}
+
+.right {
+    float: right;
+    margin: 5px 5px 5px 20px;
+}
+
+.center figure.image,
+div.center {
+    display: table;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.center figure.image figcaption {
+    width: auto!important;
+    text-align: center;
+}
+
+p.center {
+    text-align: center;
+}
+
+#content_evo {
+    figure {
+        margin: 1em 0px;
+        padding: 0 0 7px;
+        display: table;
+        width: 1px;
+        & > p {
+            padding: 0;
+            margin-bottom: 0px;
+        }
+    }
+    .caption,
+    figcaption {
+        font-size: 80%;
+        padding: 5px;
+        color: #666;
+    }
+    .align-middle:before,
+    .align-bottom:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        /*margin-right: -0.25em;*/
+        vertical-align: middle;
+    }
+    .align-middle > * {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .absolute-position {
+        position: absolute;
+    }
+    .picture {
+        padding: 0px;
+        border: 5px solid $picture-border;
+        /* rotate picture */
+        transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        -moz-transform: rotate(2deg);
+        /*add shadow*/
+        @include box-shadow(2px, 2px, 5px, $picture-box-shadow);
+        /*Why just gives a tiny bit of spact when pulled left or right */
+        &.left {
+            margin-right: 20px;
+        }
+        &.right {
+            margin-left: 20px;
+        }
+    }
+    /*Bordered Figure with Capition/Thin border in general with White text*/
+    .border {
+        border: thin $border-color solid;
+        background: $black-background-color;
+        &,
+        .caption,
+        figcaption {
+            color: $font-color;
+        }
+    }
+}

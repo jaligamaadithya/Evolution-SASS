@@ -1,0 +1,76 @@
+a.greenbutton {
+    border: 1px solid $green-button-border;
+    @include border-radius(10px, 10px, 10px, 10px);
+    @include box-shadow(2px, 2px, 5px, $gray-999);
+    @include greenbtn-property;
+    /*add gradients*/
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.10, $green-adc), color-stop(0.50, $green-8ca));
+    /* Chrome,Safari 4+ */
+    background-image: -moz-linear-gradient( center top, $green-adc 10%, $green-8ca 50%);
+    /* FF3.6+ */
+    background: -webkit-linear-gradient( top, $green-adc 10%, $green-8ca 50%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient( top, $green-adc 10%, $green-8ca 50%);
+    /* Opera11.10+ */
+    background: -ms-linear-gradient( top, $blue-dbb 0%, $blue-dark 99%);
+    /* IE10+ */
+    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='$green-adc', endColorstr='$green-8ca', GradientType=0)";
+    /* IE6-9 */
+    background: linear-gradient( top, $green-adc 10%, $green-8ca 50%);
+    /* W3C */
+    &:visited {
+        border: 1px solid $green-798;
+        @include border-radius(10px, 10px, 10px, 10px);
+        @include box-shadow(2px, 2px, 5px, $gray-999);
+        @include greenbtn-property;
+        /*add gradients*/
+        background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.10, $green-adc), color-stop(0.50, $green-8ca));
+        /* Chrome,Safari 4+ */
+        background-image: -moz-linear-gradient( center top, $green-adc 10%, $green-8ca 50%);
+        /* FF3.6+ */
+        background: -webkit-linear-gradient( top, $green-adc 10%, $green-8ca 50%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient( top, $green-adc 10%, $green-8ca 50%);
+        /* Opera11.10+ */
+        background: -ms-linear-gradient( top, $blue-dbb 0%, $blue-dark 99%);
+        /* IE10+ */
+        filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='$green-adc', endColorstr='$green-8ca', GradientType=0)";
+        ;
+        /* IE6-9 */
+        background: linear-gradient( top, $green-adc 10%, $green-8ca 50%);
+        ;
+        /* W3C */
+    }
+    &:active,
+    &:hover,
+    &:focus {
+        border: 1px solid $green-798;
+        @include border-radius(10px, 10px, 10px, 10px);
+        text-decoration: underline;
+        text-align: right;
+        clear: both;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        color: $white-color;
+        /*add gradients*/
+        background-color: $blue-dbb;
+        background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, $blue-dbb), color-stop(0.99, $blue-dark));
+        /* Chrome,Safari 4+ */
+        background-image: -moz-linear-gradient( center top, $blue-dbb 0%, $blue-dark 99%);
+        /* FF3.6+ */
+        background: -webkit-linear-gradient( top, $blue-dbb 0%, $blue-dark 99%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient( top, $blue-dbb 0%, $blue-dark 99%);
+        /* Opera11.10+ */
+        background: -ms-linear-gradient( top, $blue-dbb 0%, $blue-dark 99%);
+        /* IE10+ */
+        filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='$blue-dbb', endColorstr='$blue-dark', GradientType=0)";
+        /* IE6-9 */
+        background: linear-gradient( top, $blue-dbb 0%, $blue-dark 99%);
+        /* W3C */
+    }
+    a {
+        color: $white-color;
+    }
+}
+

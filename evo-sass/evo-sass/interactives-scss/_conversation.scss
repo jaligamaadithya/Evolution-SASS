@@ -1,0 +1,12 @@
+div.conversation {
+    margin: 5px 0 15px;
+    & > p {
+        margin: 0 !important;
+        padding: 10px 20px;
+        background-color: $background-color;
+        color: $conversation-color;
+        &:nth-of-type(2n) {
+            background-color: #D8D8D8;
+        }
+    }
+}
